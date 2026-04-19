@@ -223,7 +223,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    printf("info: starter begin\n");
+    printf("info: starter begin (ROOTED VER)\n");
     fflush(stdout);
 
     // kill old server
