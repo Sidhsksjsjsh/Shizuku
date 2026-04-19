@@ -139,11 +139,12 @@ private class ViewModel(context: Context, root: Boolean, host: String?, port: In
         GlobalScope.launch(Dispatchers.IO) {
             if (!Shell.getShell().isRoot) {
                 Shell.getCachedShell()?.close()
-                sb.append('\n').append("Can't open root shell, try again...").append('\n')
+                sb.append('\n').append("Cant open root shell, try again...").append('\n')
 
                 postResult()
                 if (!Shell.getShell().isRoot) {
                     sb.append('\n').append("Still not :(").append('\n')
+                    sb.append('\n').append("LOVE YOU ZAHIRA, HOPE U SEE THIS MESSAGES FROM FAHRI").append('\n')
                     postResult(NotRootedException())
                     return@launch
                 }
